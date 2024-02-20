@@ -1,0 +1,38 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar1 {
+  position: fixed;
+  top: 0;
+  z-index: 30;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar2 {
+  align-items: center;
+  width: 83.333333%;
+}
+
+.navbar3 {
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar4 {
+  width: 100%;
+}
+
+.Nav_List {
+  gap: 2rem;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+
+.Logo_text {
+  align-self: flex-start;
+}

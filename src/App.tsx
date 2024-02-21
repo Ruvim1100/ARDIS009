@@ -1,12 +1,14 @@
-import './App.css'
+import { useState } from "react";
+import "./App.css";
 import Navbar from "@/scenes/navbar/Navigation";
-function App() {
 
+function App() {
+  const [selectedPage, setSelectedPage] = useState("home");
   return (
     <>
-    <Navbar/>
+      <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

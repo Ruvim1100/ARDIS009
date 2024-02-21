@@ -1,34 +1,53 @@
-import React from "react";
-import { useState } from "react";
-import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import Logo from "@/assets/Logo.png";
+import Link from "./Link";
 import "./Navigation.css";
 
-type Props = {};
+type Props = {
+  selectedPage: string;
+  setSelectedPage: (value: string) => void;
+};
 
-const Navbar = (props: Props) => {
+const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
   return (
     <nav>
-    <div className="navbar-container navbar">
-      <div className="navbar-container navbar-content">
-        <div className="navbar-container navbar-menu">
-          <img className="logo" src={Logo} alt="Logo"/>
-          <div className="navbar-container navbar-buttons">
-            <div className="navbar-container nav-list">
-              <p>Главная</p>
-              <p>О нас</p>
-              <p>Самоубийство</p>
-              <p>Пострадать</p>
+      <div className="navbar-container navbar">
+        <div className="navbar-container navbar-content">
+          <div className="navbar-container navbar-menu">
+            <div className="logo">
+              <span className="logo-text">009.md </span>
             </div>
-            <div>
-              <p>Войти</p>
-              <button>Присоединиться</button>
+            <div className="navbar-container navbar-buttons">
+              <div className="navbar-container nav-list">
+                <Link
+                  page="Home"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                  
+                />
+                <Link
+                  page="О нас"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Самоубийство"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Пострадать"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+              </div>
+              <div className="navbar-container navbar-signup">
+                <p>Стать участником</p>
+                <button>Войти</button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </nav>
+    </nav>
   );
 };
 

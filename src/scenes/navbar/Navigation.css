@@ -1,7 +1,6 @@
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  color: white;
 }
 
 .navbar {
@@ -12,19 +11,17 @@
   padding-bottom: 1.5rem;
   align-items: center;
   width: 100%;
-  background-color: #467787;
-
 }
 
 .navbar-content {
   align-items: center;
-  width: 83.333333%;
+  width: 90%;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .navbar-menu {
-  gap: 4rem;
+  gap: 6rem;
   align-items: center;
   width: 100%;
 }
@@ -38,9 +35,35 @@
   gap: 2rem;
   font-size: 1rem;
   line-height: 1.25rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.navbar-signup {
+  gap: 2rem;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .logo {
-  width: 8%;
-  height: auto; 
+  font-size: 24px;
+  font-weight: bold;
+  border: 2px solid #467787;
+  padding: 5px 20px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.logo-text {
+  color: #467787;
+}
+
+.sselected-link {
+  color: #3182ce;
+  transition: color 0.5s;
+}
+
+.normal-link {
+  color: #000;
+  transition: color 0.5s;
 }

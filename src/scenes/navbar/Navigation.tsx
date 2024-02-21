@@ -18,10 +18,9 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
             <div className="navbar-container navbar-buttons">
               <div className="navbar-container nav-list">
                 <Link
-                  page="Home"
+                  page="Главная"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
-                  
                 />
                 <Link
                   page="О нас"
@@ -40,8 +39,8 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
                 />
               </div>
               <div className="navbar-container navbar-signup">
-                <p>Стать участником</p>
-                <button>Войти</button>
+                <p className="">Стать участником</p>
+                <button className="button-40">Войти</button>
               </div>
             </div>
           </div>

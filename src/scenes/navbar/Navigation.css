@@ -11,17 +11,18 @@
   padding-bottom: 1.5rem;
   align-items: center;
   width: 100%;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .navbar-content {
   align-items: center;
-  width: 90%;
+  width: 100%;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .navbar-menu {
-  gap: 6rem;
+  gap: 7rem;
   align-items: center;
   width: 100%;
 }
@@ -33,37 +34,62 @@
 
 .nav-list {
   gap: 2rem;
-  font-size: 1rem;
+  font-size: 1.05rem;
   line-height: 1.25rem;
-  font-size: 1rem;
   font-weight: 500;
 }
 
 .navbar-signup {
   gap: 2rem;
-  font-size: 17px;
+  font-size: 1.05rem;
   font-weight: 500;
+  align-items: center;
 }
 
 .logo {
   font-size: 24px;
-  font-weight: bold;
-  border: 2px solid #467787;
-  padding: 5px 20px;
+  font-weight: 700;
+  border: 3px solid #467787;
+  padding: 1px 25px;
   display: inline-block;
   border-radius: 5px;
 }
 
-.logo-text {
-  color: #467787;
-}
-
-.sselected-link {
-  color: #3182ce;
-  transition: color 0.5s;
+.selected-link {
+  color: #000;
+  border-bottom: 3px solid #467787; /* Подчеркивание */
+  padding-bottom: 0.3rem;
 }
 
 .normal-link {
   color: #000;
   transition: color 0.5s;
+}
+
+.normal-link:hover {
+  color: #467787; 
+}
+
+.button-40 {
+  background-color: #467787;
+  border: 1px solid transparent;
+  border-radius: 0.6rem;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 550;
+  line-height: 1.3rem;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  transition-duration: 0.2s;
+  width: auto;
+}
+
+.button-40:hover {
+  background-color: #2f5c6b;
+}
+
+.highlight-text:hover {
+  color: #467787;
 }

@@ -11,7 +11,7 @@ type Props = {
 
 const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
-  const [isMenuToggled, setIsMenuToggled] = useState<Boolean>(false);
+  const [isMenuToggled, setIsMenuToggled] = useState<boolean>(false);
   return (
     <nav>
       <div className="navbar">
@@ -56,7 +56,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
             ) : (
               <button className="nav-burger-menu"
               onClick={() => setIsMenuToggled(!isMenuToggled)}>
-                
+                <img src="./src/assets/bar.svg" alt="bar-icon"/>
               </button>
             )}
           </div>
@@ -67,9 +67,38 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
         <div className="mobile-menu-modal">
           <div className="close-icon-block">
             <button
-            onClick={() => setIsMenuToggled(!isMenuToggled)}>
+            className="close-icon"
+            onClick={() => setIsMenuToggled(!isMenuToggled)} >
+              <img src="./src/assets/xmark.svg" alt="xmark-icon" className="bar-icon"/>
             </button>
           </div>
+          <div className="mobile-menu-items">
+                <Link
+                  page="Главная"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Услуги"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="О нас"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Цены"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+                <Link
+                  page="Присоедениться к нам"
+                  selectedPage={selectedPage}
+                  setSelectedPage={setSelectedPage}
+                />
+              </div>
         </div>
       )}
     </nav>

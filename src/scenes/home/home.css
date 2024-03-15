@@ -1,0 +1,76 @@
+@import "@/styles/variables.css";
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 45px;
+}
+
+.left {
+  margin-top: 100px;
+  flex: 1;
+}
+
+.left h1 {
+  font-size: 5rem;
+  font-weight: 900;
+}
+
+.second-header{
+  color: var(--primary-color);
+}
+
+.left h1 span {
+  color: var(--primary-color);
+}
+
+.left p {
+  margin: 40px 0px;
+  color: var(--secondary-text);
+  font-size: 1.1rem;
+  line-height: 1.2rem;
+}
+
+.worker-image {
+  flex: 1;
+  background-image: url("@/assets/GreeMan.svg"); /* Замените путь на путь к вашему изображению */
+  background-size:contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+@media only screen and (max-width: 1300px) {
+
+  .left h1{
+    font-size: 60px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .left h1{
+    font-size: 40px;
+  }
+  .left{
+    margin-top: 80px;
+  }
+  .worker-image{
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+
+  .main{
+    padding: 20px 20px;
+  }
+
+  .left h1{
+    font-size: 40px;
+  }
+  .worker-image{
+    display: none;
+  }
+
+}

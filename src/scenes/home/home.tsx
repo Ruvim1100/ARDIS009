@@ -1,20 +1,29 @@
-import useMediaQuery from '@/hooks/useMediaQuery';
-import { SelectedPage } from '@/shared/types'
+import "./Home.css";
+import ActionButton from "@/components/button/ActionButton";
 
-type Props = {
-    setSelectedPage: (value: SelectedPage) => void;
+const Home = () => {
+  return (
+    <section id="главная">
+      <div className="main">
+        <div className="left">
+          <h1>
+            Мастерство в
+          </h1>
+          <h1 className="second-header">
+            Каждой детали
+          </h1>
+          <p >
+            Мы готовы к самым разнообразным задачам, будь то замена лампочки или
+            полная реконструкция. Всегда точно, всегда надежно, всегда с
+            исключительным мастерством
+          </p>
+          <ActionButton/>
+        </div>
+        <div className="worker-image">
+        </div>
+      </div>
+    </section>
+  );
 };
 
-const home = ({setSelectedPage}: Props) => {
-  return (
-    <section
-    id='главная'
-    >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Odio animi ullam sed temporibus nostrum laudantium suscipit sint rem optio ex alias, quisquam quidem eos eaque, 
-        eligendi modi necessitatibus aliquid molestiae.
-    </section>
-  ) 
-}
-
-export default home
+export default Home;

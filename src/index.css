@@ -1,7 +1,5 @@
-@font-face {
-  font-family: 'RobotoFlex';
-  src: url('@/styles/fonts/RobotoFlex.ttf') format('truetype');
-}
+
+@import url(./styles/fonts.css);
 
 html,
 #root,
@@ -9,7 +7,8 @@ body,
 .app {
   height: 100%;
   width: 100%;
-  font-family: "RobotoFlex", sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--background-gray-color);
 } 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,

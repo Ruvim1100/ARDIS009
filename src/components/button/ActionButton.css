@@ -1,0 +1,31 @@
+@import "@/styles/variables.css";
+
+.button {
+  background-color: var(--primary-color);
+  border: 1px solid transparent;
+  border-radius: 60px;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: 550;
+  padding: 5px 5px;
+  text-align: center;
+  transition-duration: 0.2s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button img{
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.button span{
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.01rem;
+  margin-right: 10px;
+}

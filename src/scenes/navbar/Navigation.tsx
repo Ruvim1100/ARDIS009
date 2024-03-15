@@ -49,7 +49,7 @@ const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
                 />
               </div>
               <div className="navbar-signup">
-                <p className="">Стать участником</p>
+                <p className="">Язык</p>
                 <button className="button-40">Войти</button>
               </div>
             </div>
